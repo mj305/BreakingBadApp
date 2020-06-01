@@ -7,7 +7,6 @@ import FormControl from 'react-bootstrap/FormControl';
 const HeaderNav = () => {
 
   return(
-
       <>
         <Navbar expand="lg" variant="light" bg="light">
         <Navbar.Brand href="#"> Breadking Bad </Navbar.Brand>

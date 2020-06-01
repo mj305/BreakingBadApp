@@ -1,13 +1,29 @@
 import React from 'react';
-import HeaderNav from './components/HeaderNav';
-import SearchBar from './components/SearchBar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  } from "react-router-dom";
+import Home from './components/Home';
+import CharactersPage from './components//CharactersPage'
 
 function App() {
   return (
-    <div>
-      <HeaderNav />
-      <SearchBar />
-    </div>
+   
+      <Router>
+      <Switch>
+
+          <Route path="/characters/:name">
+            <CharactersPage />
+          </Route>
+
+          <Route path="/">
+            <Home />
+          </Route>
+          
+        </Switch>
+      </Router>
+   
   );
 }
 
