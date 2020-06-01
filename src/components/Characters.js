@@ -5,6 +5,10 @@ import PaginationComponent from './Pagination';
 
 
 const Characters = () => {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log('The link was clicked.');
+  }
 
   const [characters, setCharacters] = useState([]);
 
@@ -30,7 +34,7 @@ const Characters = () => {
               <Card.Text>
                 {actor.status}
               </Card.Text>
-              <Link to="/charactersPage">View Details</Link>
+              <Link to="/charactersPage" onClick={handleClick}>View Details</Link>
             </Card.Body>
           </Card>
          </>
