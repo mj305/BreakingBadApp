@@ -17,15 +17,10 @@ const CharacterPage = () => {
   return(
     
       <div>
-        <p></p>
-        <img src={charactersInfo.img} alt={`Character Pic`}/>
+        <p>CHARACTER PAGE</p>
       </div>
     
     )
   };
       
-
-
-    
-
-    export default CharacterPage;
+export default CharacterPage;

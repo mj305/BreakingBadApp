@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
+import PaginationComponent from './Pagination';
 
 
 const Characters = () => {
@@ -29,11 +30,12 @@ const Characters = () => {
               <Card.Text>
                 {actor.status}
               </Card.Text>
-              <Link to="/charactersPage/${actor.img}">View Details</Link>
+              <Link to="/charactersPage">View Details</Link>
             </Card.Body>
           </Card>
          </>
        })}
+       <PaginationComponent />
      </div>
     )
 };
