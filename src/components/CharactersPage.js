@@ -29,20 +29,22 @@ const CharacterPage = () => {
                       flexDirection: 'column',
                       justifyContent: 'center',
                       alignSelf: 'center',
-                      alignItems: 'center'}}>
-                        
-              <Card style={{ width: '18rem' }}>
+                      alignItems: 'center',
+                      padding: '2rem', 
+                      }}>
+
+              <Card style={{ width: '30rem' }}>
+              <Card.Title style={{textAlign: 'center', padding: '.5rem', margin: '.5rem'}}>{charactersInfo[0].name}</Card.Title>
               <Card.Img variant="top" src={charactersInfo[0].img} />
               <Card.Body>
-              <Card.Title>{charactersInfo[0].name}</Card.Title>
-              <Card.Text>
-              {charactersInfo[0].status}
-              </Card.Text>
+              
+              <Card.Text>Alias: {charactersInfo[0].nickname}</Card.Text>
+
               </Card.Body>
               <ListGroup className="list-group-flush">
-              <ListGroupItem>Cras justo odio</ListGroupItem>
-              <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-              <ListGroupItem>Vestibulum at eros</ListGroupItem>
+              <ListGroupItem>Occupation: {charactersInfo[0].occupation}</ListGroupItem>
+              <ListGroupItem>Status: {charactersInfo[0].status}</ListGroupItem>
+              <ListGroupItem>Actor Name: {charactersInfo[0].portrayed}</ListGroupItem>
               </ListGroup>
               {/*     <Card.Body>
               <Card.Link href="/">Home</Card.Link>
