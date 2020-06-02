@@ -1,13 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import PaginationComponent from './Pagination';
 
 
 const Characters = () => {
   function handleClick(e) {
     e.preventDefault();
-    console.log('The link was clicked.');
   }
 
   const [characters, setCharacters] = useState([]);
@@ -24,22 +22,29 @@ const Characters = () => {
 
   return(
      <div>
-       {characters.map(actor => {
+       {characters.map((actor, index) => {
 
-         return <>
-           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={actor.img} />
-            <Card.Body>
-              <Card.Title> {actor.name} </Card.Title>
-              <Card.Text>
-                {actor.status}
-              </Card.Text>
-              <Link to="/charactersPage" onClick={handleClick}>View Details</Link>
-            </Card.Body>
-          </Card>
+      return <>
+
+          <Card key={index} 
+                  style={{ width: '18rem', 
+                           marginTop:"2rem", 
+                           display: "inline-flex",
+                          }}>
+
+              <Card.Img variant="top" src={actor.img} />
+              <Card.Body>
+                <Card.Title> {actor.name} </Card.Title>
+                <Card.Text>
+                  {actor.status}
+                </Card.Text>
+                <Link to={`character/${actor.char_id}`}>View Details</Link>
+              </Card.Body>
+            </Card>
+
          </>
+
        })}
-       <PaginationComponent />
      </div>
     )
 };
