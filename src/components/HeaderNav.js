@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import BBLogo from '../assets/BBLogo.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
@@ -15,20 +15,27 @@ const HeaderNav = () => {
     setSearchInput(e.target.value) 
   };
   
+ /* Working on preventDefault and SearchForm */
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log("submit buton is clicked")
-  }
-  /* HANDLE change is setting state
-  apend name in 
-  fetch req to url
-  name=search imput 
-  */
+    if (searchInput === '') {
+      void 0;
+    } else {
+      setSearchInput(true);
+      e.preventDefault();
+      const result = fetch(`https://breakingbadapi.com/api/characters/${searchInput}`)
+        .then(response => response.json())
+        .then(
+          data => {
+            setSearchInput(data);
+          }
+        )
+    }
+  };
 
   return(
       
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home"><img className="nav-bar-logo" src={BBLogo} alt="Logo"/> </Navbar.Brand>
+        <Navbar.Brand href="/"><img className="nav-bar-logo" src={BBLogo} alt="Logo"/> </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
