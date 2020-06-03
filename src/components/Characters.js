@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 
 const Characters = () => {
@@ -19,27 +20,25 @@ const Characters = () => {
   }, [])
 
   return(
+
      <div>
-       {characters.map((actor, index) => {
-
-      return <>
-
-          <div className="characters-cards-container">
-          <Card className="characters-cards-wrapper" key={index}>
-              <Link to={`character/${actor.char_id}`}>             
-                <Card.Img variant="top" src={actor.img} />
-                  <Card.Body>
-                    <Card.Title> {actor.name} </Card.Title>
+        <CardColumns>
+        {characters.map((actor, index) => {
+            return <>
+              <Link to={`character/${actor.char_id}`} >
+                <Card className='cards-pic-wrapper' >
+                    <Card.Img variant="top" src={actor.img} className='cards-pics' />
+                    <Card.Body>
+                    <Card.Title>{actor.name}</Card.Title>
                   </Card.Body>
-              </Link> 
-            </Card>
-          </div>
-            
-         </>
-
-       })}
-     </div>
-    )
+                </Card>
+              </Link>
+            </>
+          })}
+        </CardColumns>
+      </div>  
+  );
+    
 };
 
 export default Characters;
