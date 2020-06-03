@@ -1,0 +1,44 @@
+/* Nav Bar */
+.navbar {
+  margin: auto;
+  width: 100%;
+  
+}
+
+.nav-bar-container {
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.nav-bar-wrapper {
+  display: flex;
+   justify-content: space-between;
+  
+}
+
+.nav-bar-logo {
+  width: 8rem;
+}
+
+/* Characters Cards */
+
+.characters-cards-container {
+  padding-left: 2rem;
+  width: 18rem; 
+  margin-top: 2rem;
+}
+
+
+/* CharactersPage */
+
+.characters-page-container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+

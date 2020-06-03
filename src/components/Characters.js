@@ -4,9 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 
 const Characters = () => {
-  function handleClick(e) {
-    e.preventDefault();
-  }
+
 
   const [characters, setCharacters] = useState([]);
 
@@ -26,22 +24,17 @@ const Characters = () => {
 
       return <>
 
-          <Card key={index} 
-                  style={{ width: '18rem', 
-                           marginTop:"2rem", 
-                           display: "inline-flex",
-                          }}>
-
-              <Card.Img variant="top" src={actor.img} />
-              <Card.Body>
-                <Card.Title> {actor.name} </Card.Title>
-                <Card.Text>
-                  {actor.status}
-                </Card.Text>
-                <Link to={`character/${actor.char_id}`}>View Details</Link>
-              </Card.Body>
+          <div className="characters-cards-container">
+          <Card className="characters-cards-wrapper" key={index}>
+              <Link to={`character/${actor.char_id}`}>             
+                <Card.Img variant="top" src={actor.img} />
+                  <Card.Body>
+                    <Card.Title> {actor.name} </Card.Title>
+                  </Card.Body>
+              </Link> 
             </Card>
-
+          </div>
+            
          </>
 
        })}

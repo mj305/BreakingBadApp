@@ -25,13 +25,7 @@ const CharacterPage = () => {
       <>
         <HeaderNav />
 
-          <div style={{display: 'flex', 
-                      flexDirection: 'column',
-                      justifyContent: 'center',
-                      alignSelf: 'center',
-                      alignItems: 'center',
-                      padding: '2rem', 
-                      }}>
+          <div className="characters-page-container">
 
               <Card style={{ width: '30rem' }}>
               <Card.Title style={{textAlign: 'center', padding: '.5rem', margin: '.5rem'}}>{charactersInfo[0].name}</Card.Title>
