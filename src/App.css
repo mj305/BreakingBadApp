@@ -5,7 +5,7 @@
 }
 
 .nav-bar-logo {
-  width: 6rem;
+  width: 7.2rem;
   margin-left: 5rem;
 }
 
@@ -14,16 +14,32 @@
 }
 
 /* Characters Cards */
+
 .card-columns {
   margin: 2rem
+  
 }
+
+
 
 .card-img-top {
   height: 39rem;
   width: 20rem;
   border-radius: 0% 20%;
+  
 }
 
 
 /* CharactersPage */
+
+
+.card {
+  margin: auto;
+  border: white;
+}
+
+.characters-page-container {
+  margin-top: 2rem;
+}
+
 

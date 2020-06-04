@@ -47,7 +47,7 @@ const CharacterPage = () => {
 
           <div className="characters-page-container">
 
-              <Card style={{ width: '30rem' }}>
+              <Card style={{ width: '35rem'}}>
               <Card.Title style={{textAlign: 'center', padding: '.5rem', margin: '.5rem'}}>{charactersInfo[0].name}</Card.Title>
               <Card.Img variant="top" src={charactersInfo[0].img} />
               <Card.Body>
