@@ -4,26 +4,18 @@ import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 
 
-const Characters = () => {
-
-
-  const [characters, setCharacters] = useState([]);
+const Characters = (props) => {
 
   useEffect(() => {
-    fetch(`https://breakingbadapi.com/api/characters`)
-    .then(response => response.json())
-    .then(
-      data => {
-        setCharacters(data);
-      }
-    )
+    props.fetchActors()
   }, [])
 
   return(
 
      <div>
         <CardColumns>
-        {characters.map((actor, index) => {
+        {props.characters.map((actor, index) => {
+          console.log(actor)
             return <>
               <Link to={`character/${actor.char_id}`} >
                 <Card className='cards-pic-wrapper' >
