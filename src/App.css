@@ -1,12 +1,17 @@
 /* BACKGROUND IMAGE */
+/* Characters.js white at bottom of page, need to adjust background image */
 
 .backImage {
-  background-image: url(../src/assets/BBPic.jpg);
-  background-color: #cccccc; 
-  background-position: center;
+  background: url(../src/assets/BBPic.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat; 
-  background-attachment:fixed; 
+  background-color: #cccccc; 
+ /*  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0; */
 }
 
 /* Nav Bar */
@@ -29,10 +34,11 @@
 
 .card-columns {
   margin: 2rem
-  
 }
 
-
+.card-columns {
+  margin-bottom: 0rem;
+}
 
 .card-img-top {
   height: 39rem;
@@ -48,10 +54,12 @@
 .card {
   margin: auto;
   opacity: 91%;
+  
 }
 
 .characters-page-container {
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 
