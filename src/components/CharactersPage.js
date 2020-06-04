@@ -13,7 +13,7 @@ import FormControl from 'react-bootstrap/FormControl';
 
 const CharacterPage = () => {
 
-const [charactersInfo, setCharactersInfo] = useState([{}]);
+  const [charactersInfo, setCharactersInfo] = useState([{}]);
   const {id} = useParams();
 
   useEffect(() => {
@@ -25,11 +25,11 @@ const [charactersInfo, setCharactersInfo] = useState([{}]);
       }
     )
   }, [])
-  console.log(charactersInfo)
+ 
   return( 
 
       <>
-        <Navbar bg="light" expand="lg">
+        <Navbar /* bg="light" */ expand="lg" className="nav-bar-container">
             <Navbar.Brand href="/"><img className="nav-bar-logo" src={BBLogo} alt="Logo"/> </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -37,7 +37,7 @@ const [charactersInfo, setCharactersInfo] = useState([{}]);
               <Nav className="mr-auto">
               </Nav>
 
-              <Form inline>
+              <Form inline  className="form-wrapper">
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                 <Button variant="outline-success">Search</Button>
               </Form>

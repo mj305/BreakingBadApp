@@ -1,53 +1,29 @@
 /* Nav Bar */
-.navbar {
-  margin: auto;
-  width: 100%;
-  
-}
 
 .nav-bar-container {
-   display: flex;
-   justify-content: space-between;
-   
-}
-
-.nav-bar-wrapper {
-  display: flex;
-   justify-content: space-between;
-  
+  background-color: #c9d4c9;
 }
 
 .nav-bar-logo {
-  width: 8rem;
+  width: 6rem;
+  margin-left: 5rem;
+}
+
+.form-wrapper {
+  margin-right: 5rem;
 }
 
 /* Characters Cards */
+.card-columns {
+  margin: 2rem
+}
 
-.characters-cards-container {
-  padding-left: 2rem;
-  width: 18rem; 
-  margin-top: 2rem;
+.card-img-top {
+  height: 39rem;
+  width: 20rem;
+  border-radius: 0% 20%;
 }
 
 
 /* CharactersPage */
 
-.characters-page-container {
-  display: flex; 
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-
-/* pics */
-.cards-pics {
-  height: 40rem;
-  
-}
-
-.cards-pic-wrapper {
-  padding: 5rem;
-}

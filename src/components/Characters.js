@@ -14,8 +14,9 @@ const Characters = (props) => {
 
      <div>
         <CardColumns>
-        {props.characters.map((actor, index) => {
-          console.log(actor)
+          
+         {props.characters.map((actor, index) => {
+          
             return <>
               <Link to={`character/${actor.char_id}`} >
                 <Card className='cards-pic-wrapper' >
@@ -27,6 +28,7 @@ const Characters = (props) => {
               </Link>
             </>
           })}
+
         </CardColumns>
       </div>  
   );

@@ -35,7 +35,7 @@ const HeaderNav = () => {
   return(
 
        <>
-          <Navbar bg="light" expand="lg">
+          <Navbar /* bg="light" */ expand="lg" className="nav-bar-container">
             <Navbar.Brand href="/"><img className="nav-bar-logo" src={BBLogo} alt="Logo"/> </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -43,7 +43,7 @@ const HeaderNav = () => {
               <Nav className="mr-auto">
               </Nav>
 
-              <Form inline onSubmit={handleSubmit} >
+              <Form inline onSubmit={handleSubmit} className="form-wrapper">
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={handleChange} />
                 <Button variant="outline-success">Search</Button>
               </Form>
