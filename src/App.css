@@ -1,5 +1,9 @@
 /* BACKGROUND IMAGE */
-/* Characters.js white at bottom of page, need to adjust background image */
+/*****************************
+1.- When searching for actor images show left, need style center
+2.- Search bar in CharactersPage.js need to submit form API
+3.- Create an error page.
+*/
 
 .backImage {
   background: url(../src/assets/BBPic.jpg) no-repeat center center fixed;
@@ -8,10 +12,6 @@
   -o-background-size: cover;
   background-size: cover;
   background-color: #cccccc; 
- /*  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0; */
 }
 
 /* Nav Bar */
