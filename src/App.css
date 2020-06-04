@@ -2,10 +2,11 @@
 
 .backImage {
   background-image: url(../src/assets/BBPic.jpg);
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-color: #cccccc; 
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment:fixed; 
 }
 
 /* Nav Bar */
