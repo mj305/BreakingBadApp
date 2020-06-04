@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import CardColumns from 'react-bootstrap/CardColumns';
+import CardColumns from 'react-bootstrap/CardColumns';/* 
+import BBPic from '../assets/BBPic.jpg'; */
 
 
 const Characters = (props) => {
@@ -12,7 +13,7 @@ const Characters = (props) => {
 
   return(
 
-     <div>
+     <div /* styles={{ backgroundImage: `url(${BBPic})`  }}  */>
         <CardColumns>
           
          {props.characters.map((actor, index) => {

@@ -1,7 +1,18 @@
+/* BACKGROUND IMAGE */
+
+.backImage {
+  background-image: url(../src/assets/BBPic.jpg);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
 /* Nav Bar */
 
 .nav-bar-container {
   background-color: #c9d4c9;
+  opacity: 91%;
 }
 
 .nav-bar-logo {
@@ -35,7 +46,7 @@
 
 .card {
   margin: auto;
-  border: white;
+  opacity: 91%;
 }
 
 .characters-page-container {

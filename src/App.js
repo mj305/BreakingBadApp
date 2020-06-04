@@ -8,11 +8,13 @@ import Home from './components/Home';
 import CharactersPage from './components/CharactersPage'
 import './App.css';
 
+
 function App() {
   return (
-   
+    
+    <div className="backImage" >
       <Router>
-      <Switch>
+        <Switch>
 
           <Route path="/character/:id">
             <CharactersPage />
@@ -24,7 +26,7 @@ function App() {
           
         </Switch>
       </Router>
-   
+    </div>
   );
 }
 
