@@ -19,6 +19,7 @@
 .nav-bar-container {
   background-color: #c9d4c9;
   opacity: 91%;
+
 }
 
 .nav-bar-logo {
@@ -38,6 +39,8 @@
 
 .card-columns {
   margin-bottom: 0rem;
+  padding-top: 10rem;
+  margin-top: auto;
 }
 
 .card-img-top {
@@ -60,6 +63,8 @@
 .characters-page-container {
   margin-top: 2rem;
   padding-bottom: 2rem;
+  padding-top: 10rem;
+  margin-top: auto;
 }
 
 

@@ -35,7 +35,7 @@ const HeaderNav = () => {
   return(
 
        <>
-          <Navbar /* bg="light" */ expand="lg" className="nav-bar-container">
+          <Navbar /* bg="light" */ fixed="top" expand="lg" className="nav-bar-container">
             <Navbar.Brand href="/"><img className="nav-bar-logo" src={BBLogo} alt="Logo"/> </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
