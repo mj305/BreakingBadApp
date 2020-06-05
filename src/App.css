@@ -5,6 +5,11 @@
 3.- Create an error page.
 */
 
+* {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
 .backImage {
   background: url(../src/assets/BBPic.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -58,6 +63,14 @@
   margin: auto;
   opacity: 91%;
   
+}
+
+.card-text {
+  text-align: left;
+}
+
+.list-group-item {
+  text-align: left;
 }
 
 .characters-page-container {
