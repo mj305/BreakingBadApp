@@ -3,8 +3,10 @@ import React from 'react';
 const ErrorPage = () => {
 
   return (
-    <h>UPS... </h>
-    
+
+    <div style={{"padding-bottom": "500%", "margin-top":"15rem", "padding-left": "120%" }} >
+      <h1 className="error-page-header" >Ups... </h1>
+    </div>
   )
 };
 

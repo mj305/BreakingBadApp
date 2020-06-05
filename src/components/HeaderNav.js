@@ -44,7 +44,7 @@ const HeaderNav = () => {
               </Nav>
 
               <Form inline onSubmit={handleSubmit} className="form-wrapper">
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={handleChange} />
+                <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={handleChange} style={{textAlign: "left"}}/>
                 <Button variant="outline-success">Search</Button>
               </Form>
 

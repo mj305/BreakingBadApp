@@ -89,7 +89,7 @@
   margin: auto;
   margin-bottom: 0rem;
   column-gap: 2.25rem;
-  margin-left: 30%;
+  margin-left: auto;
 }
 
 
@@ -104,3 +104,8 @@ a :hover {
   color: rgb(31, 107, 24);
 }
 
+.error-page-header{ 
+  color: white;
+  font-size: 3rem;
+  
+}
