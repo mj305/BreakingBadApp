@@ -23,7 +23,7 @@
 
 .nav-bar-container {
   background-color: #c9d4c9;
-  opacity: 91%;
+  opacity: 97%;
 
 }
 
@@ -36,7 +36,9 @@
   margin-right: 5rem;
 }
 
-/* Characters Cards */
+
+/* Characters.js Cards */ 
+/* CharactersPage.js */
 
 .card-columns {
   margin: 2rem
@@ -55,13 +57,9 @@
   
 }
 
-
-/* CharactersPage */
-
-
 .card {
   margin: auto;
-  opacity: 91%;
+  opacity: 95%;
   
 }
 
@@ -80,4 +78,10 @@
   margin-top: auto;
 }
 
+/* LINKS */
+
+
+a :hover {
+  color: rgb(31, 107, 24);
+}
 

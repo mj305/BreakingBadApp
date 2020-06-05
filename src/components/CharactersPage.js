@@ -48,18 +48,16 @@ const CharacterPage = () => {
           <div className="characters-page-container">
 
               <Card style={{ width: '35rem'}}>
-              <Card.Title style={{textAlign: 'center', padding: '.5rem', margin: '.5rem'}}>{charactersInfo[0].name}</Card.Title>
-              <Card.Img variant="top" src={charactersInfo[0].img} />
-              <Card.Body>
-              
-              <Card.Text>Alias: {charactersInfo[0].nickname}</Card.Text>
-
-              </Card.Body>
-              <ListGroup className="list-group-flush">
-              <ListGroupItem>Occupation: {charactersInfo[0].occupation}</ListGroupItem>
-              <ListGroupItem>Status: {charactersInfo[0].status}</ListGroupItem>
-              <ListGroupItem>Actor Name: {charactersInfo[0].portrayed}</ListGroupItem>
-              </ListGroup>
+                <Card.Title style={{textAlign: 'center', padding: '.5rem', margin: '.5rem'}}>{charactersInfo[0].name}</Card.Title>
+                <Card.Img variant="top" src={charactersInfo[0].img} />
+                <Card.Body>
+                  <Card.Text>Alias: {charactersInfo[0].nickname}</Card.Text>
+                </Card.Body>
+                  <ListGroup className="list-group-flush">
+                  <ListGroupItem>Occupation: {charactersInfo[0].occupation}</ListGroupItem>
+                  <ListGroupItem>Status: {charactersInfo[0].status}</ListGroupItem>
+                  <ListGroupItem>Actor Name: {charactersInfo[0].portrayed}</ListGroupItem>
+                  </ListGroup>
               </Card>
           </div>
       </>
