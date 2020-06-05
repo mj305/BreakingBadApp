@@ -18,7 +18,8 @@ const Characters = (props) => {
   } else {
     actorsRender=props.characters.map((actor, index) => {
           
-      return <>
+      return <> 
+       
         <Link to={`character/${actor.char_id}`} >
           <Card className='cards-pic-wrapper' >
               <Card.Img variant="top" src={actor.img} className='cards-pics' />
@@ -36,20 +37,6 @@ const Characters = (props) => {
      <div>
         <CardColumns>
           {actorsRender}
-         {/* {props.characters.map((actor, index) => {
-          
-            return <>
-              <Link to={`character/${actor.char_id}`} >
-                <Card className='cards-pic-wrapper' >
-                    <Card.Img variant="top" src={actor.img} className='cards-pics' />
-                    <Card.Body>
-                    <Card.Title>{actor.name}</Card.Title>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </>
-          })} */}
-
         </CardColumns>
       </div>  
   );

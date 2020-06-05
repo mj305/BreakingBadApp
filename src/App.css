@@ -64,7 +64,7 @@
 .card {
   margin: auto;
   opacity: 95%;
-  
+  padding: .4rem;
 }
 
 .card-text {
@@ -77,9 +77,23 @@
 
 .characters-page-container {
   margin-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   padding-top: 10rem;
   margin-top: auto;
+}
+
+.card-columns {
+  padding-top: 12rem;
+  width: 60rem;
+  margin: auto;
+  margin-bottom: 0rem;
+  column-gap: 2.25rem;
+  margin-left: 30%;
+}
+
+
+.card-img-top {
+  height: 20rem;
 }
 
 /* LINKS */
