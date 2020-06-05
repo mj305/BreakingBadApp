@@ -26,7 +26,7 @@ const CharacterPage = () => {
   return( 
 
       <>
-        <Navbar /* bg="light" */ fixed="top"  expand="lg" className="nav-bar-container">
+        <Navbar fixed="top"  expand="lg" className="nav-bar-container">
             <Navbar.Brand href="/"><img className="nav-bar-logo" src={BBLogo} alt="Logo"/> </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -38,7 +38,7 @@ const CharacterPage = () => {
 
           <div className="characters-page-container">
 
-              <Card style={{ width: '35rem'}}>
+              <Card style={{ width: '18rem'}}>
                 <Card.Title style={{textAlign: 'center', padding: '.5rem', margin: '.5rem'}}>{charactersInfo[0].name}</Card.Title>
                 <Card.Img variant="top" src={charactersInfo[0].img} />
                 <Card.Body>
