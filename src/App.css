@@ -40,6 +40,10 @@
 /* Characters.js Cards */ 
 /* CharactersPage.js */
 
+.card-body {
+  width: 20rem;
+}
+
 .card-columns {
   margin: 2rem
 }
