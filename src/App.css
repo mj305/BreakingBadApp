@@ -86,10 +86,11 @@
 .card-columns {
   padding-top: 12rem;
   width: 60rem;
-  margin: auto;
+  /* margin: auto; */
   margin-bottom: 0rem;
   column-gap: 2.25rem;
-  margin-left: auto;
+  /* margin-left: auto; */
+  margin-left: 20%;
 }
 
 
@@ -107,5 +108,5 @@ a :hover {
 .error-page-header{ 
   color: white;
   font-size: 3rem;
-  
+
 }
