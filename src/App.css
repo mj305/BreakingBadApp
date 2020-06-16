@@ -101,7 +101,7 @@
   grid-template-columns: repeat(5, 23rem);
   grid-gap: 1rem;
   padding: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   background-color: #d2dab9;
   color: #06623b;
   -moz-box-shadow:    inset 0 0 10px #000000;
@@ -334,3 +334,218 @@
     height: 21.2rem;
   }  
 }
+
+
+
+
+/* Individual Character  */
+
+@media (max-width: 1550px) {
+
+  .character-page-container {
+    display: grid;
+    grid-template-columns: repeat(2, 40rem);
+    grid-gap: 1rem;
+    padding: 2rem;
+    padding-bottom: 36rem;
+    background-color: #d2dab9;
+    color: #06623b;
+    box-shadow: inset 0 0 10px #000000;
+  }
+
+  .character-page-title-name {
+    grid-column: 1/2;
+    place-self: center;
+ }
+
+   .character-page-title {
+     font-size: 2.5rem;
+   }
+
+  .character-page-cards-descriptions {
+    grid-column: 2/2;
+    place-self: center;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .character-page-container {
+    display: grid;
+    grid-template-columns: 42rem 25rem;
+    grid-gap: 1rem;
+    padding: 2rem;
+    padding-bottom: 57rem;
+    background-color: #d2dab9;
+    color: #06623b;
+    box-shadow: inset 0 0 10px #000000;
+
+  }
+
+  .character-page-title-name {
+    grid-column: 1/2;
+    place-self: center;
+ }
+
+   .character-page-title {
+     font-size: 2rem;
+   }
+
+   .character-page-picture {
+    width: 23rem;
+    height: 30rem;
+    box-shadow: 0 8px 6px -6px black;
+  }
+
+  .character-page-cards-descriptions {
+    grid-column: 2/2;
+    place-self: center;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .character-page-container {
+    display: grid;
+    grid-template-columns: 27rem 24rem;
+    grid-gap: 1rem;
+    padding: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 60rem;
+    background-color: #d2dab9;
+    color: #06623b;
+    box-shadow: inset 0 0 10px #000000;
+  }
+
+  .character-page-title-name {
+    grid-column: 1/2;
+    place-self: center;
+ }
+
+   .character-page-title {
+     font-size: 2rem;
+   }
+
+   .character-page-picture {
+    width: 21rem;
+    height: 27rem;
+    box-shadow: 0 8px 6px -6px black;
+  }
+
+  .character-page-cards-descriptions {
+    grid-column: 2/2;
+    place-self: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .character-page-container {
+    display: grid;
+    grid-template-rows: 27rem 24rem;
+    grid-gap: 1rem;
+    padding: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 60rem;
+    background-color: #d2dab9;
+    color: #06623b;
+    box-shadow: inset 0 0 10px #000000;
+  }
+
+  .character-page-title-name {
+    grid-column: 1/2;
+    place-self: center;
+ }
+
+   .character-page-title {
+     font-size: 1.8rem;
+   }
+
+   .character-page-picture {
+    width: 21rem;
+    height: 27rem;
+    box-shadow: 0 8px 6px -6px black;
+  }
+
+  .character-page-cards-descriptions {
+    grid-column: 2/2;
+    place-self: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .character-page-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 60rem;
+    background-color: #d2dab9;
+    color: #06623b;
+    box-shadow: inset 0 0 10px #000000;
+  }
+
+   .character-page-title {
+     font-size: 1.7rem;
+   }
+
+   .character-page-picture {
+    width: 21rem;
+    height: 27rem;
+    box-shadow: 0 8px 6px -6px black;
+  }
+
+  .character-page-cards-descriptions {
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    padding: 1rem;
+    padding-right: 6rem;
+    margin-left: 14rem;
+    margin-right: 0px;
+    margin-top: 1rem;  
+  }
+}
+
+@media (max-width: 700px) {
+
+  .character-page-cards-descriptions {
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    padding: 1rem;
+    padding-right: 6rem;
+    margin-left: 9rem;
+    margin-right: 0px;
+    margin-top: 1rem;  
+  }
+}
+
+@media (max-width: 700px) {
+
+  .character-page-cards-descriptions {
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    padding: 1rem;
+    padding-right: 6rem;
+    margin-left: 6em;
+    margin-right: 0px;
+    margin-top: 1rem;  
+  }
+}
+
+@media (max-width: 650px) {
+
+  .character-page-cards-descriptions {
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    padding: 1rem;
+    padding-right: 6rem;
+    margin-left: 2em;
+    margin-right: 0px;
+    margin-top: 1rem;  
+  }
+}
+
