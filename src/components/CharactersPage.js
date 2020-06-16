@@ -21,16 +21,24 @@ const CharacterPage = () => {
 
     <>
     <div className="characters-page-container">
-      <SearchBarComponent />
-        <div>
-            <p>{charactersInfo[0].name}</p>
-            <img src={charactersInfo[0].img} />
-            <p>Alias: {charactersInfo[0].nickname}</p>
-            <p>Occupation: {charactersInfo[0].occupation}</p>
-            <p>Status: {charactersInfo[0].status}</p>
-            <p>Actor Name: {charactersInfo[0].portrayed}</p>
+
+       <SearchBarComponent />
+
+        <div className="characters-page-cards-container" />
+
+            <div className="characters-page-cards-title-name" >
+              <h1>{charactersInfo[0].name}</h1>
+              <img src={charactersInfo[0].img} />
+            </div>
+
+            <div className="characters-page-cards-descriptions" >
+              <p>Alias: {charactersInfo[0].nickname}</p>
+              <p>Occupation: {charactersInfo[0].occupation}</p>
+              <p>Status: {charactersInfo[0].status}</p>
+              <p>Actor Name: {charactersInfo[0].portrayed}</p>
+            </div>
+
         </div>
-    </div>
     </>
 
     )

@@ -12,7 +12,8 @@
 }
 
 .nav-bar-logo {
-  width: 5.5rem;
+  width: 5.5rem !important;
+  height: 5.5rem !important;
 }
 
 .search-bar-button {
@@ -24,8 +25,35 @@
   margin-right: 5rem;
 }
 
-/* CharactersPage */
+/* /* CharactersPage */
+ img {
+  width: 14rem;
+  height: 20rem;
+  
+} 
+
+.characters-container {
+  display: grid;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
+  grid-gap: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
 
 .characters-page-container {
-  margin-top: 5rem
+
+  
+}
+
+.characters-page-cards-container {
+  
+}
+
+.characters-page-cards-title-name {
+  border: dotted orange  1.5rem;
+}
+
+.characters-page-cards-descriptions {
+  border: dotted orange  1.5rem;
 }

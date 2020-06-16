@@ -27,7 +27,9 @@ const Characters = (props) => {
 
   return(
 
-     <div>{actorsRender}</div>  
+     <div className="characters-container" >
+       {actorsRender}
+      </div>  
   );
     
 };
