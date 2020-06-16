@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Characters from './Characters';
 import BBLogo from '../assets/BBLogo.png';
 import Navbar from 'react-bootstrap/Navbar';
@@ -45,7 +45,7 @@ const HeaderNav = () => {
 
               <Form inline onSubmit={handleSubmit} className="form-wrapper">
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={handleChange} style={{textAlign: "left"}}/>
-                <Button variant="outline-success">Search</Button>
+                <Button className="search-bar-button" variant="outline-success">Search</Button>
               </Form>
 
             </Navbar.Collapse>

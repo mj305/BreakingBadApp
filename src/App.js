@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   return (
     
-    <div className="backImage" >
+    <div >
       <Router>
         <Switch>
 

@@ -1,112 +1,31 @@
-/* BACKGROUND IMAGE */
-/*****************************
-1.- When searching for actor images show left, need style center
-2.- Search bar in CharactersPage.js need to submit form API
-3.- Create an error page.
-*/
 
 * {
   font-family: 'Roboto', sans-serif;
-  text-align: center;
 }
 
-.backImage {
-  background: url(../src/assets/BBPic.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #cccccc; 
-}
 
 /* Nav Bar */
 
 .nav-bar-container {
-  background-color: #c9d4c9;
-  opacity: 97%;
-
+  background-color: #649d66;
+  position: sticky !important;
 }
 
 .nav-bar-logo {
-  width: 7.2rem;
-  margin-left: 5rem;
+  width: 5.5rem;
+}
+
+.search-bar-button {
+  color: #f6d743 !important;
+  border-color: #f6d743 !important;
 }
 
 .form-wrapper {
   margin-right: 5rem;
 }
 
-
-/* Characters.js Cards */ 
-/* CharactersPage.js */
-
-.card-body {
-  width: 20rem;
-}
-
-.card-columns {
-  margin: 2rem
-}
-
-.card-columns {
-  margin-bottom: 0rem;
-  padding-top: 10rem;
-  margin-top: auto;
-}
-
-.card-img-top {
-  height: 39rem;
-  width: 20rem;
-  border-radius: 0% 20%;
-  
-}
-
-.card {
-  margin: auto;
-  opacity: 95%;
-  padding: .4rem;
-  width: 17rem;
-}
-
-.card-text {
-  text-align: left;
-}
-
-.list-group-item {
-  text-align: left;
-}
+/* CharactersPage */
 
 .characters-page-container {
-  margin-top: 2rem;
-  padding-bottom: 3rem;
-  padding-top: 10rem;
-  margin-top: auto;
-}
-
-.card-columns {
-  padding-top: 12rem;
-  width: 60rem;
-  /* margin: auto; */
-  margin-bottom: 0rem;
-  column-gap: 2.25rem;
-  /* margin-left: auto; */
-  margin-left: 20%;
-}
-
-
-.card-img-top {
-  height: 20rem;
-}
-
-/* LINKS */
-
-
-a :hover {
-  color: rgb(31, 107, 24);
-}
-
-.error-page-header{ 
-  color: white;
-  font-size: 3rem;
-
+  margin-top: 5rem
 }
