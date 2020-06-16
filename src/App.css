@@ -38,6 +38,15 @@
   height: 22rem;
 }
 
+.all-characters-cards-image:hover {
+  opacity: 80%;
+  cursor: pointer;
+  -webkit-transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+  transition: opacity 2s ease-out;
+}
+
 .characters-container {
   display: grid;
   grid-template-columns:  repeat(4, 20.1rem);
@@ -47,6 +56,9 @@
   padding: 2.5rem; 
   padding-bottom: 25rem;
   background-color: #d2dab9;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
 }
 
 .all-characters-cards-container {
@@ -54,10 +66,19 @@
   text-align: center;
   text-decoration: none;
   border-radius: 1%;
-  padding: .5rem;
+  padding: 1rem;
   margin: .5rem;
-  border: solid .5rem #06623b;
+  /* border: solid .5rem #06623b; */
   background-color: #06623b;
+}
+
+.all-characters-cards-container:hover {
+  background-color: #649d66;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 .all-characters-cards-title {
@@ -134,7 +155,7 @@
   .characters-container {
     display: grid;
     grid-template-columns: repeat(3, 16rem);
-    grid-template-rows: 23rem auto;
+    grid-template-rows: 23.5rem auto;
     grid-gap: .5rem; 
     justify-content: space-around;
     padding: 1rem; 
@@ -152,7 +173,7 @@
   }
 
   img {
-    width: 13.2rem;
+    width: 12.4rem;
     height: 18rem;
   }  
 }
@@ -204,7 +225,7 @@
   }
 
   img {
-    width: 11.2rem;
+    width: 10.4rem;
     height: 15rem;
   }  
 }
@@ -218,7 +239,7 @@
   .characters-container {
     display: grid;
     grid-template-columns: repeat(2, 16rem);
-    grid-template-rows: 22rem auto;
+    grid-template-rows: 22.5rem auto;
     grid-gap: .5rem; 
     justify-content: space-around;
     padding: 1rem; 
@@ -236,7 +257,7 @@
   }
 
   img {
-    width: 13.2rem;
+    width: 12.4rem;
     height: 17.2rem;
   }  
 }
@@ -264,7 +285,7 @@
   }
 
   img {
-    width: 23.2rem;
+    width: 22.4rem;
     height: 29.2rem;
   }  
 }
@@ -274,7 +295,7 @@
   .characters-container {
     display: grid;
     grid-template-columns: repeat(1, 22rem);
-    grid-template-rows: 26rem auto;
+    grid-template-rows: 27rem auto;
     grid-gap: .5rem; 
     justify-content: space-around;
     padding: 1rem; 
@@ -292,7 +313,7 @@
   }
 
   img {
-    width: 19.2rem;
+    width: 18.4rem;
     height: 21.2rem;
   }  
 }

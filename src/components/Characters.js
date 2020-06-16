@@ -20,7 +20,7 @@ const Characters = (props) => {
       return<> 
             <div className="all-characters-cards-container" >
               <Link to={`character/${actor.char_id}`}> 
-                <img src={actor.img} />
+                <img className="all-characters-cards-image" src={actor.img} />
                 <p className="all-characters-cards-title" >{actor.name}</p>
               </Link>
             </div>
