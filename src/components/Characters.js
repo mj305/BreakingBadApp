@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import ErrorPage from './ErrorPage'
+import Footer from '../components/FooterComponent';
 
 
 const Characters = (props) => {
@@ -28,10 +29,14 @@ const Characters = (props) => {
   }
 
   return(
-
+    <>  
      <div className="characters-container" >
        {actorsRender}
-      </div>  
+      </div> 
+      <div  className="footer-container"  >
+       <Footer />
+      </div>
+    </>   
   );
     
 };
