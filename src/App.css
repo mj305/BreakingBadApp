@@ -39,25 +39,29 @@
   row-gap: 3rem; 
   justify-content: space-around;
   padding: 1.5rem; 
-  margin: 1rem;
-
+  
+  background-color: #d2dab9;
 }
 
 .all-characters-cards-container {
   font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
-  border: solid .5rem #feb72b;
-  background-color: #feb72b;
+  border: solid .5rem #06623b;
+  background-color: #06623b;
+  border-radius: 1%;
   padding: .5rem;
   margin: .5rem;
 
 }
 
 .all-characters-cards-title {
-  color: #06623b;
+  color: #f6d743;
+  font-weight: bold;
   text-decoration: none;
-  
+  align-self: center;
+  margin-top: .5rem;
+margin-bottom: 1rem;
 }
 
 
