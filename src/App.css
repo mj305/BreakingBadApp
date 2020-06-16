@@ -68,7 +68,6 @@
   border-radius: 1%;
   padding: 1rem;
   margin: .5rem;
-  /* border: solid .5rem #06623b; */
   background-color: #06623b;
 }
 
@@ -97,22 +96,40 @@
 
 /* Individual Character  */
 
-.characters-page-container {
-  border: dotted .5rem pink;
-  
+.character-page-container {
+  display: grid;
+  grid-template-columns: repeat(5, 23rem);
+  grid-gap: 1rem;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  background-color: #d2dab9;
+  color: #06623b;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
 }
 
-.characters-page-cards-container {
-  border: dotted .5rem pink;
-
+.character-page-title-name {
+  grid-column: 2/4;
+  place-self: center;
 }
 
-.characters-page-cards-title-name {
-  border: dotted pink  1.5rem;
+.character-page-title {
+  text-align: center;
+  padding-bottom: .5rem;
 }
 
-.characters-page-cards-descriptions {
-  border: dotted pink  1.5rem;
+.character-page-picture {
+  width: 25rem;
+  height: 34rem;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+
+.character-page-cards-descriptions {
+  grid-column: 4/4;
+  place-self: center;
+  font-size: 2rem;
 }
 
 
