@@ -17,10 +17,12 @@ const Characters = (props) => {
     actorsRender=props.characters.map((actor, index) => {
           
       return<> 
-            <Link to={`character/${actor.char_id}`}> 
-              <img src={actor.img} />
-              <p>{actor.name}</p>
-            </Link>
+            <div className="all-characters-cards-container" >
+              <Link to={`character/${actor.char_id}`}> 
+                <img src={actor.img} />
+                <p className="all-characters-cards-title" >{actor.name}</p>
+              </Link>
+            </div>
            </>
     }) 
   }
