@@ -4,9 +4,11 @@ const ErrorPage = () => {
 
   return (
 
-    <div style={{"padding-bottom": "510%", "margin-top":"13rem", "padding-left": "120%" }} >
-      <h1 className="error-page-header" >Ups... </h1>
+    <div class="spinner-border text-warning" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
+
+   
   )
 };
 

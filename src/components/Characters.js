@@ -13,7 +13,7 @@ const Characters = (props) => {
   let actorsRender;
 
   if (props.characters === undefined || props.characters.length === 0) {
-    actorsRender=<ErrorPage/>;
+    actorsRender = <ErrorPage/>;
   } else {
     actorsRender=props.characters.map((actor, index) => {
           
@@ -27,7 +27,7 @@ const Characters = (props) => {
            </>
     }) 
   }
-
+  
   return(
     <>  
      <div className="characters-container" >
