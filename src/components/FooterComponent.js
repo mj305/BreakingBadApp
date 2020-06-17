@@ -15,6 +15,7 @@ const Footer = () => {
               <a class="m-0 text-center text-white" href="https://mariabeckles.herokuapp.com/" target="blank" >
                 <p className="footer-paragraph" >Created by Maria Beckles</p>
               </a>
+              
             </div>
           </div>
         </footer>

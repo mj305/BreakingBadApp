@@ -28,6 +28,7 @@ const CharacterPage = () => {
             <img className="character-page-picture" src={charactersInfo[0].img} />
           </div>
 
+
           <div className="character-page-cards-descriptions" >
             <p>Alias: {charactersInfo[0].nickname}</p>
             <p>Occupation: {charactersInfo[0].occupation}</p>
